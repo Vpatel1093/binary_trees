@@ -50,7 +50,7 @@ class BTree
 			current_node = stack.pop
 			return current_node.value if current_node.value == value
 			stack.push(current_node.left) unless current_node.left.nil?
-			stack.push(current.node.right) unless current_node.right.nil?
+			stack.push(current_node.right) unless current_node.right.nil?
 		end
 		nil
 	end
